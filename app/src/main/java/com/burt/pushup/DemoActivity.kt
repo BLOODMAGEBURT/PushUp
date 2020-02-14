@@ -3,7 +3,6 @@ package com.burt.pushup
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.shuyu.gsyvideoplayer.GSYVideoManager
 import com.shuyu.gsyvideoplayer.utils.OrientationUtils
@@ -24,17 +23,16 @@ class DemoActivity : AppCompatActivity() {
 
     private fun init() {
 
-//        val source = "http://9890.vod.myqcloud.com/9890_4e292f9a3dd011e6b4078980237cc3d3.f20.mp4"
         val source = "https://mkdown-1256191338.cos.ap-beijing.myqcloud.com/pushup.flv"
 
-        video_player.setUp(source, true, "测试测试")
+        video_player.setUp(source, true, "做好一个俯卧撑")
 
         //增加封面
-        val imageView = ImageView(this)
-        imageView.scaleType = ImageView.ScaleType.CENTER_CROP
-        imageView.setImageResource(R.mipmap.pant)
+//        val imageView = ImageView(this)
+//        imageView.scaleType = ImageView.ScaleType.CENTER_CROP
+//        imageView.setImageResource(R.mipmap.Ss)
 
-        video_player.thumbImageView = imageView
+//        video_player.thumbImageView = imageView
         //增加title
         video_player.titleTextView.visibility = View.VISIBLE
         //设置返回键
@@ -71,8 +69,8 @@ class DemoActivity : AppCompatActivity() {
     override fun onBackPressed() {
 
         //先返回正常状态
-        if (orientationUtils.getScreenType() == ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE) {
-            video_player.getFullscreenButton().performClick();
+        if (orientationUtils.screenType == ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE) {
+            video_player.fullscreenButton.performClick()
             return
         }
         //释放所有
