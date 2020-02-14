@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_demo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="演示"
+            android:textSize="@dimen/text_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="记录"
+            android:textSize="@dimen/text_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_ambition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="目标"
+            android:textSize="@dimen/text_size" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_start"
+        android:layout_marginBottom="30dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_down"
+            android:layout_width="@dimen/normal_size"
+            android:layout_height="@dimen/normal_size"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_count"
+            android:layout_width="@dimen/normal_size"
+            android:layout_height="@dimen/normal_size"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="5" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_up"
+            android:layout_width="@dimen/normal_size"
+            android:layout_height="@dimen/normal_size"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.burt.pushup.view.StartBtnView
+        android:id="@+id/btn_start"
+        android:layout_width="@dimen/start_btn_size"
+        android:layout_height="@dimen/start_btn_size"
+        android:layout_centerInParent="true"
+        android:gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_author"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="完成一件事，从现在开始"
+        android:textSize="@dimen/text_size" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="end"
+        android:paddingRight="50dp"
+        android:text="--许啵啵"
+        android:textSize="@dimen/text_size" />
+
+</RelativeLayout>
