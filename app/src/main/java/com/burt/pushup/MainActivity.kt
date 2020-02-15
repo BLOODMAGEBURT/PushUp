@@ -112,7 +112,7 @@ class MainActivity : View.OnClickListener, AppCompatActivity() {
     }
 
     private fun toRecord() {
-
+        Log.d("xu", "some log")
     }
 
     private fun toAmbition() {
