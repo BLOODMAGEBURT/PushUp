@@ -37,4 +37,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.shuyu:GSYVideoPlayer:7.1.2'
+    implementation 'com.haibin:calendarview:3.6.7'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }

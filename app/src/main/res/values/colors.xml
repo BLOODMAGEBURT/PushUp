@@ -4,4 +4,22 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="black">#000000</color>
+
+
+    <color name="line_color">#e7e7e7</color>
+    <color name="content_background">#f2f2f2</color>
+    <color name="solar_background">#009988</color>
+
+    <color name="white">#ffffffff</color>
+
+    <color name="a">#FF40db25</color>
+    <color name="b">#FFe69138</color>
+    <color name="c">#FFdf1356</color>
+    <color name="d">#FFedc56d</color>
+    <color name="e">#FFedc56d</color>
+    <color name="f">#FFaacc44</color>
+    <color name="g">#FFbc13f0</color>
+    <color name="h">#FF13acf0</color>
+    <color name="i">#FF13acf0</color>
+
 </resources>

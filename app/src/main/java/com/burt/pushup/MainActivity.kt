@@ -51,7 +51,6 @@ class MainActivity : View.OnClickListener, AppCompatActivity() {
 
                 reset()
             }
-
         })
 
         /**
@@ -109,11 +108,13 @@ class MainActivity : View.OnClickListener, AppCompatActivity() {
 
         startActivity(Intent(this, DemoActivity::class.java))
 
+
     }
 
     private fun toRecord() {
         Log.d("xu", "some log")
         Log.d("xu", "logTO")
+        startActivity(Intent(this, RecordActivity::class.java))
     }
 
     private fun toAmbition() {
