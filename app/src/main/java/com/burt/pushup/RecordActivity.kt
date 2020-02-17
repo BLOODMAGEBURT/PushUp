@@ -1,6 +1,5 @@
 package com.burt.pushup
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity

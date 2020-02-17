@@ -5,6 +5,14 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+    signingConfigs {
+        sign {
+            storeFile file('/Users/burt/Downloads/PushUp/pushup.keystore')
+            storePassword '124826'
+            keyAlias = 'pushup'
+            keyPassword '124826'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.burt.pushup"
@@ -18,6 +26,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.sign
         }
     }
 
@@ -39,4 +48,5 @@ dependencies {
     implementation 'com.shuyu:GSYVideoPlayer:7.1.2'
     implementation 'com.haibin:calendarview:3.6.7'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.yanzhikai:BooheeRuler:0.1.6'
 }

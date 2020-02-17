@@ -118,7 +118,9 @@ class MainActivity : View.OnClickListener, AppCompatActivity() {
     }
 
     private fun toAmbition() {
-
+        Log.d("xu", "some log")
+        Log.d("xu", "logTO")
+        startActivity(Intent(this, AmbitionActivity::class.java))
     }
 
     private fun reset() {

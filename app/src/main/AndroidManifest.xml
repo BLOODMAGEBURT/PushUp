@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecordActivity"></activity>
+        <activity android:name=".AmbitionActivity"></activity>
+        <activity android:name=".RecordActivity" />
         <activity
             android:name=".DemoActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
