@@ -53,6 +53,8 @@ public class ProgressMonthView extends MonthView {
 
         int angle = getAngle(Integer.parseInt(calendar.getScheme()));
 
+        mProgressPaint.setColor(calendar.getSchemeColor());
+
         RectF progressRectF = new RectF(cx - mRadius, cy - mRadius, cx + mRadius, cy + mRadius);
         canvas.drawArc(progressRectF, -90, angle, false, mProgressPaint);
 

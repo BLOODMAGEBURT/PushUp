@@ -54,8 +54,8 @@ class RecordActivity : CalendarView.OnCalendarSelectListener,
         val map: HashMap<String, Calendar> = HashMap()
 
 
-        map[getSchemeCalendar(year, month, 3, Color.GREEN, "20").toString()] =
-            getSchemeCalendar(year, month, 3, Color.GREEN, "20")
+        map[getSchemeCalendar(year, month, 3, resources.getColor(R.color.a), "20").toString()] =
+            getSchemeCalendar(year, month, 3, resources.getColor(R.color.a), "20")
 
         map.put(
             getSchemeCalendar(year, month, 6, resources.getColor(R.color.b), "33").toString(),
@@ -80,6 +80,10 @@ class RecordActivity : CalendarView.OnCalendarSelectListener,
         map.put(
             getSchemeCalendar(year, month, 18, resources.getColor(R.color.g), "70").toString(),
             getSchemeCalendar(year, month, 18, resources.getColor(R.color.g), "70")
+        )
+        map.put(
+            getSchemeCalendar(year, month, 19, resources.getColor(R.color.b), "35").toString(),
+            getSchemeCalendar(year, month, 19, resources.getColor(R.color.b), "35")
         )
         map.put(
             getSchemeCalendar(year, month, 25, resources.getColor(R.color.h), "36").toString(),

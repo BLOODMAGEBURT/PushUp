@@ -24,7 +24,8 @@ public class ProgressWeekView extends WeekView {
         mProgressPaint.setAntiAlias(true);
         mProgressPaint.setStyle(Paint.Style.STROKE);
         mProgressPaint.setStrokeWidth(dipToPx(context, 2.2f));
-        mProgressPaint.setColor(0xBBf54a00);
+//        mProgressPaint.setColor(0xBBf54a00);
+        mProgressPaint.setColor(0xBBB52E88);
 
         mNoneProgressPaint.setAntiAlias(true);
         mNoneProgressPaint.setStyle(Paint.Style.STROKE);
@@ -51,6 +52,8 @@ public class ProgressWeekView extends WeekView {
         int cy = mItemHeight / 2;
 
         int angle = getAngle(Integer.parseInt(calendar.getScheme()));
+
+        mProgressPaint.setColor(calendar.getSchemeColor());
 
         RectF progressRectF = new RectF(cx - mRadius, cy - mRadius, cx + mRadius, cy + mRadius);
         canvas.drawArc(progressRectF, -90, angle, false, mProgressPaint);
