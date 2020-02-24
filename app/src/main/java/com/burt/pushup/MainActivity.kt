@@ -31,11 +31,11 @@ class MainActivity : View.OnClickListener, AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        this.tv_down.setOnClickListener(this)
-        this.tv_up.setOnClickListener(this)
-        this.tv_demo.setOnClickListener(this)
-        this.tv_record.setOnClickListener(this)
-        this.tv_ambition.setOnClickListener(this)
+        tv_down.setOnClickListener(this)
+        tv_up.setOnClickListener(this)
+        tv_demo.setOnClickListener(this)
+        tv_record.setOnClickListener(this)
+        tv_ambition.setOnClickListener(this)
 
 
         this.btn_start.setOnStartBtnListener(object : StartBtnView.StartBtnListener {
