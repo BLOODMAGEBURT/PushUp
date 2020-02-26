@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import com.burt.pushup.ext.hell
 import com.burt.pushup.ext.toast
 import com.burt.pushup.view.StartBtnView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -160,6 +161,8 @@ class MainActivity : View.OnClickListener, AppCompatActivity() {
         } else {
             toast("小样，怎么也得做一个吧")
         }
+
+        hell()
     }
 
     override fun onDestroy() {
