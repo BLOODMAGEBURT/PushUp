@@ -44,6 +44,9 @@ class MainActivity : View.OnClickListener, AppCompatActivity() {
 
                 // 注册监听位置传感器
                 sm.registerListener(listener, sensor, SensorManager.SENSOR_DELAY_NORMAL)
+
+                update()
+
             }
 
             override fun onStop() {
@@ -109,18 +112,15 @@ class MainActivity : View.OnClickListener, AppCompatActivity() {
 
         startActivity(Intent(this, DemoActivity::class.java))
 
-
     }
 
     private fun toRecord() {
-        Log.d("xu", "some log")
-        Log.d("xu", "logTO")
+
         startActivity(Intent(this, RecordActivity::class.java))
     }
 
     private fun toAmbition() {
-        Log.d("xu", "some log")
-        Log.d("xu", "logTO")
+
         startActivity(Intent(this, AmbitionActivity::class.java))
     }
 

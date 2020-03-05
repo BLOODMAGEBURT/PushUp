@@ -2,6 +2,7 @@ package com.burt.pushup.view
 
 import android.animation.ValueAnimator
 import android.content.Context
+import android.content.res.TypedArray
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.RectF
@@ -42,6 +43,9 @@ class StartBtnView @JvmOverloads constructor(
     var textPaint = Paint()
     var textInCircle = "0"
     var progress = 0F  // 根据数值，算进度
+    var totalNum = 1F // 总体的数量
+
+    var totalPaint = Paint()
 
     var mHeight: Int = 0
     var mWidth: Int = 0
@@ -77,9 +81,22 @@ class StartBtnView @JvmOverloads constructor(
      * */
     lateinit var listener: StartBtnListener
 
+    /**
+     * 文字
+     */
+    var text = "开始"
+
     init {
 
+
         initPaint()  // 初始化paint
+
+        val typedArray: TypedArray =context.obtainStyledAttributes(attrs,
+            R.styleable.StartBtnView)
+
+        text = typedArray.getString(R.styleable.StartBtnView_text)?:"开始"
+
+        typedArray.recycle();
 
     }
 
@@ -105,6 +122,10 @@ class StartBtnView @JvmOverloads constructor(
 
         bottom = textPaint.fontMetrics.bottom
         top = textPaint.fontMetrics.top
+
+
+        totalPaint.set(textPaint)
+        totalPaint.textSize = 50F
 
     }
 
@@ -155,9 +176,12 @@ class StartBtnView @JvmOverloads constructor(
 
             canvas?.drawText(textInCircle, centerX, baseLineY, textPaint)
 
+
+            canvas?.drawText("/ ${totalNum.toInt()}", centerX + 65, baseLineY, totalPaint)
+
         } else {
 
-            canvas?.drawText("开始", centerX, baseLineY, textPaint)
+            canvas?.drawText(text, centerX, baseLineY, textPaint)
 
         }
 
@@ -215,6 +239,8 @@ class StartBtnView @JvmOverloads constructor(
     fun updateTextInCircle(now: Int, total: Float) {
 
         progress = (now / total)
+
+        totalNum = total
 
         textInCircle = now.toString()
 

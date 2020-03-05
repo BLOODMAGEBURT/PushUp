@@ -49,4 +49,5 @@ dependencies {
     implementation 'com.haibin:calendarview:3.6.7'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.yanzhikai:BooheeRuler:0.1.6'
+    implementation 'me.jessyan:autosize:1.2.0'
 }
