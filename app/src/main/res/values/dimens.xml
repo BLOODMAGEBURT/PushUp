@@ -3,7 +3,7 @@
     <dimen name="normal_size">80mm</dimen>
     <dimen name="start_btn_size">240mm</dimen>
     <dimen name="text_size">28mm</dimen>
-    <dimen name="ambition_size">32mm</dimen>
-    <dimen name="ambition_margin_left">40mm</dimen>
+    <dimen name="ambition_size">48mm</dimen>
+    <dimen name="ambition_margin_left">54mm</dimen>
 
 </resources>

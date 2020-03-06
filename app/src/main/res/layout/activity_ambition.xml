@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/ambition_margin_left"
-            android:layout_marginTop="40mm"
+            android:layout_marginTop="53mm"
             android:ems="1"
             android:text="周目标"
             android:textSize="@dimen/ambition_size"
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/ambition_margin_left"
-            android:layout_marginTop="60mm"
+            android:layout_marginTop="138mm"
             android:ems="1"
             android:text="我将在此签字画押"
             android:textSize="@dimen/ambition_size" />
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/ambition_margin_left"
-            android:layout_marginTop="80mm"
+            android:layout_marginTop="219mm"
             android:ems="1"
             android:text="用俯卧撑撑起我的梦想"
             android:textSize="@dimen/ambition_size" />
