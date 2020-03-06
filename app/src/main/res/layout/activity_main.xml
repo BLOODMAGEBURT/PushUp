@@ -22,7 +22,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="演示"
-            android:textSize="@dimen/text_size" />
+            android:textSize="@dimen/ambition_normal_size" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_record"
@@ -31,7 +31,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="记录"
-            android:textSize="@dimen/text_size" />
+            android:textSize="@dimen/ambition_normal_size" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_ambition"
@@ -40,7 +40,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="目标"
-            android:textSize="@dimen/text_size" />
+            android:textSize="@dimen/ambition_normal_size" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -60,7 +60,7 @@
             android:layout_height="@dimen/normal_size"
             android:gravity="center"
             android:text="-"
-            android:textSize="40mm" />
+            android:textSize="56mm" />
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_count"
@@ -70,6 +70,7 @@
             android:layout_marginRight="40mm"
             android:gravity="center"
             android:inputType="number"
+            android:textSize="56mm"
             android:text="5" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -78,7 +79,7 @@
             android:layout_height="@dimen/normal_size"
             android:gravity="center"
             android:text="+"
-            android:textSize="40mm" />
+            android:textSize="56mm" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -98,7 +99,7 @@
         android:layout_marginBottom="30mm"
         android:gravity="center"
         android:text="完成一件事，从现在开始"
-        android:textSize="@dimen/text_size" />
+        android:textSize="@dimen/ambition_normal_size" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_author"
@@ -109,6 +110,6 @@
         android:gravity="end"
         android:paddingRight="100mm"
         android:text="--许啵啵"
-        android:textSize="@dimen/text_size" />
+        android:textSize="@dimen/ambition_normal_size" />
 
 </RelativeLayout>

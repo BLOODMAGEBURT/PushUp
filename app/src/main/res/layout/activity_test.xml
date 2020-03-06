@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43.2mm"
+        android:layout_marginTop="57.6mm"
+        android:layout_marginEnd="43.2mm"
+        android:orientation="vertical"
+        android:background="@color/b"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="144mm"
+            android:layout_height="144mm"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="86.4mm"
+            android:src="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="57.6mm"
+            android:text="提交完成"
+            android:textColor="#FF333333"
+            android:textSize="51.84mm" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="164.2mm"
+            android:layout_marginTop="57.6mm"
+            android:layout_marginEnd="164.2mm"
+            android:text="还款已转入您的放款行二类户，等待放款行进行
+还款划扣处理"
+            android:textColor="#FF999999"
+            android:textSize="31.68px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2mm"
+            android:background="@color/colorAccent"
+            android:layout_marginStart="115.2mm"
+            android:layout_marginEnd="115.2mm"
+            android:layout_marginTop="67.1mm"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56.9mm">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本次还款金额"
+                android:textColor="#FF999999"
+                android:textSize="37.44mm"
+                android:layout_marginStart="72mm"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1829.66元"
+                android:textColor="#FF666666"
+                android:textSize="37.44px"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="71.7mm"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.4mm"
+            android:layout_marginBottom="86.7mm">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本次还款金额"
+                android:textColor="#FF999999"
+                android:textSize="37.44mm"
+                android:layout_marginStart="72mm"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1829.66元"
+                android:textColor="#FF666666"
+                android:textSize="37.44px"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="71.7mm"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:layout_marginTop="86.4mm"
+        android:textSize="48.96mm"
+        android:paddingTop="44.7mm"
+        android:paddingBottom="43.8mm"
+        android:layout_marginStart="43.2mm"
+        android:layout_marginEnd="43.2mm"
+
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

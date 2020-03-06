@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.graphics.Canvas
 import android.graphics.Paint
+import android.graphics.Rect
 import android.graphics.RectF
 import android.util.AttributeSet
 import android.util.Log
@@ -116,7 +117,7 @@ class StartBtnView @JvmOverloads constructor(
 
         textPaint.isAntiAlias = true
         textPaint.style = Paint.Style.FILL
-        textPaint.textSize = 100F
+        textPaint.textSize = 70F
         textPaint.color = mContext.resources.getColor(R.color.colorPrimary)
         textPaint.textAlign = Paint.Align.CENTER  // 设置基线的绘制点
 
@@ -125,7 +126,7 @@ class StartBtnView @JvmOverloads constructor(
 
 
         totalPaint.set(textPaint)
-        totalPaint.textSize = 50F
+        totalPaint.textSize = 35F
 
     }
 
@@ -176,8 +177,9 @@ class StartBtnView @JvmOverloads constructor(
 
             canvas?.drawText(textInCircle, centerX, baseLineY, textPaint)
 
-
-            canvas?.drawText("/ ${totalNum.toInt()}", centerX + 65, baseLineY, totalPaint)
+            val width =getTextWidth(textInCircle)  //获取字的宽度
+            Log.d("xu","加厚的{$width}")
+            canvas?.drawText("/ ${totalNum.toInt()}", centerX + width, baseLineY, totalPaint)
 
         } else {
 
@@ -185,6 +187,16 @@ class StartBtnView @JvmOverloads constructor(
 
         }
 
+    }
+
+    private fun getTextWidth(textInCircle: String): Int {
+        //2. 计算文字所在矩形，可以得到宽高
+        val rect = Rect()
+        textPaint.getTextBounds(textInCircle, 0, textInCircle.length, rect)
+        val w = rect.width()
+        Log.d("xu", "宽度是：{$w}")
+
+        return (w + 15)
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {

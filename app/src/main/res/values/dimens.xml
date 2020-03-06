@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="normal_size">80mm</dimen>
-    <dimen name="start_btn_size">240mm</dimen>
+    <dimen name="start_btn_size">260mm</dimen>
     <dimen name="text_size">28mm</dimen>
-    <dimen name="ambition_size">48mm</dimen>
+    <dimen name="ambition_bold_size">48mm</dimen>
+    <dimen name="ambition_normal_size">37.7mm</dimen>
     <dimen name="ambition_margin_left">54mm</dimen>
 
 </resources>
