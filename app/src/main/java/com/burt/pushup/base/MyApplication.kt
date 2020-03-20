@@ -33,23 +33,23 @@ class MyApplication: Application (){
                     //系统会重绘当前的页面, 经测试在某些机型, 某些情况下系统不会重绘当前页面, ScreenUtils.getScreenSize(activity) 的参数一定要不要传 Application!!!
                     //                        AutoSizeConfig.getInstance().setScreenWidth(ScreenUtils.getScreenSize(activity)[0]);
                     //                        AutoSizeConfig.getInstance().setScreenHeight(ScreenUtils.getScreenSize(activity)[1]);
-                    me.jessyan.autosize.utils.LogUtils.d(
-                        String.format(
-                            Locale.ENGLISH,
-                            "%s onAdaptBefore!",
-                            target.javaClass.name
-                        )
-                    )
+//                    me.jessyan.autosize.utils.LogUtils.d(
+//                        String.format(
+//                            Locale.ENGLISH,
+//                            "%s onAdaptBefore!",
+//                            target.javaClass.name
+//                        )
+//                    )
                 }
 
                 override fun onAdaptAfter(target: Any, activity: Activity) {
-                    me.jessyan.autosize.utils.LogUtils.d(
-                        String.format(
-                            Locale.ENGLISH,
-                            "%s onAdaptAfter!",
-                            target.javaClass.name
-                        )
-                    )
+//                    me.jessyan.autosize.utils.LogUtils.d(
+//                        String.format(
+//                            Locale.ENGLISH,
+//                            "%s onAdaptAfter!",
+//                            target.javaClass.name
+//                        )
+//                    )
                 }
             }).unitsManager
             .setSupportDP(false)

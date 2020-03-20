@@ -1,17 +1,13 @@
 package com.burt.pushup
 
-import com.burt.pushup.bean.Music
-import com.burt.pushup.bean.MusicDetail
+import com.burt.pushup.bean.DevBean
 import io.reactivex.Observable
 import retrofit2.http.GET
-import retrofit2.http.Query
 
 
 interface ApiService {
+    @GET("/developerRegister")
+    fun dev_register(): Observable<DevBean>
 
-    @GET("musicRankings")
-    fun getMusics(): Observable<Music>
 
-    @GET("musicRankingsDetails")
-    fun getMusicDetails(@Query("type") type: Int): Observable<MusicDetail>
 }

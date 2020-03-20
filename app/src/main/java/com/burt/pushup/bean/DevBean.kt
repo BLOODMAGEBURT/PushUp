@@ -1,7 +1,7 @@
 package com.burt.pushup.bean
 
-data class MusicDetail(
+data class DevBean(
     val code: Int,
     val message: String,
-    val result: List<ResultX>
+    val result: Result
 )
